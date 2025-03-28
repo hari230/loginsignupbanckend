@@ -2,8 +2,8 @@ from flask import Blueprint, request, jsonify
 # from models import User
 from backend.models import User
 
-from database import users_collection
-from auth import hash_password, verify_password, create_jwt_token
+from backend.database import users_collection
+from backend.auth import hash_password, verify_password, create_jwt_token
 
 user_routes = Blueprint("user_routes", __name__)
 
